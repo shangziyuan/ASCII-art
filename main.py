@@ -7,7 +7,8 @@ brightness_map = "`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&
 map_len = len(brightness_map)
 
 # Read image and print height and width
-im = Image.open("ascii-pineapple.jpg")
+im = Image.open("cat.jpg")
+im.thumbnail((500,500))
 print("Successfully loaded image!")
 
 im_arr = np.array(im, dtype='int64')
